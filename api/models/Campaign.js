@@ -15,6 +15,9 @@ module.exports = {
   	characters:{
   		collection:'Character'
   	}
-  }
+  },
+
+  
+  
 };
 
