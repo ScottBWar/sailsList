@@ -1,0 +1,9 @@
+<div class="characterlist">
+<h1> Here is a list of all the campaigns:</h1>
+<ul>
+ <% for (character in charmodel) { %>
+        <li class="character"><%= charmodel[character].name %></li>
+         <li class="character"><%= charmodel[character].characterclass %></li>
+        <% } %>
+</ul>
+</div>

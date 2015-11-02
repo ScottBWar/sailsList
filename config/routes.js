@@ -39,6 +39,11 @@ module.exports.routes = {
   'get /campaigns':{
     controller:'campaign',
     action: 'index'
+  },
+
+  'get /characters':{
+    controller:'character',
+    action: 'index'
   }
 
   /***************************************************************************
