@@ -9,12 +9,10 @@ module.exports = {
 
   attributes: {
   	title:{
-  		type:'string',
+  		type:'STRING',
   		defaultsTo:'Murder in BG'
   	},
-  	characters:{
-  		collection:'Character'
-  	}
+  	
   },
 
   

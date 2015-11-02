@@ -36,8 +36,9 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  '/campaign/all':{
-    view: 'campaign'
+  'get /campaigns':{
+    controller:'campaign',
+    action: 'index'
   }
 
   /***************************************************************************

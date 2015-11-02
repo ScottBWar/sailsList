@@ -6,30 +6,32 @@
  */
 
 module.exports = {
-	create: function (req, res) {
-    return res.json({
-      todo: 'Not implemented yet!'
-    });
-  },
+    // create: function (req, res) {
+    //    return res.json({
+    //      todo: 'Not implemented yet!'
+    //    });
+    //  },
 
-  /**
-   * CommentController.destroy()
-   */
-  destroy: function (req, res) {
-    return res.json({
-      todo: 'Not implemented yet!'
-    });
-  },
 
-  all: function(req, res){
-  	console.log("GOT HERE");
-  	campaigns = Campaign.findAll().done(function(err, campaigns){
-  		console.log("CAMPAIGNS" + campaigns);
-  		res.view({
-  			camps : campaigns
-  		});
-  	});
+    //  destroy: function (req, res) {
+    //    return res.json({
+    //      todo: 'Not implemented yet!'
+    //    });
+    //  },
 
-  }
+    index: function(req, res) {
+        console.log("GOT HERE");
+        Campaign.find(function(err, campaigns) {
+            if (err) {
+              console.log(err);
+              return res.send(err, 500);
+            }
+
+            console.log("CAMPAIGNS" + campaigns);
+            res.view({
+                model: campaigns
+            });
+        });
+
+    }
 };
-
