@@ -8,8 +8,14 @@
 module.exports = {
 
   attributes: {
+    id:{
+      type:'integer',
+      primaryKey:'true'
+    },
+
   	name:{
-  		type:'string'
+  		type:'string',
+      defaultsTo:'thisnewuser'
   	},
 
   	password:{
@@ -24,7 +30,7 @@ module.exports = {
 
   	campaigns:{
   		collection: 'Campaign',
-  		defaultsTo:{'title':'Adams Wrath'}
+  		defaultsTo:[{'title':'Adams Wrath'}]
   	}
 
   }

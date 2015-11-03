@@ -44,6 +44,11 @@ module.exports.routes = {
   'get /characters':{
     controller:'character',
     action: 'index'
+  },
+
+  'get /users':{
+    controller:'user',
+    action: 'index'
   }
 
   /***************************************************************************

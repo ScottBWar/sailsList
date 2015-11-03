@@ -6,6 +6,19 @@
  */
 
 module.exports = {
+
+	 index: function(req, res) {
+        User.find(function(err, users) {
+            if (err) {
+              console.log(err);
+              return res.send(err, 500);
+            }
+            res.view({
+                usermodel: users
+            });
+        });
+
+    }
 	
 };
 
