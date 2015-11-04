@@ -17,6 +17,10 @@ module.exports = {
   		type:'STRING',
   		defaultsTo:'Murder in BG'
   	},
+
+    user:{
+      model:"user"
+    }
   	
   },
 

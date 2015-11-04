@@ -25,13 +25,12 @@ module.exports = {
 
   	characters:{
   		collection: 'character',
-      via:"user",
-  		defaultsTo:[{'id':1,'name':'chumbo','class':'fighter'}]
+      via:"user"
   	},
 
   	campaigns:{
   		collection: 'campaign',
-  		defaultsTo:[{'title':'Adams Wrath'}]
+      via:"user"
   	}
 
   }
