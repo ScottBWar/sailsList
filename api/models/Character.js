@@ -8,15 +8,24 @@
 module.exports = {
 
   attributes: {
+    id:{
+      type:'INTEGER',
+      primaryKey:'true'
+    },
+
   	name:{
-  		type:'string',
+  		type:'STRING',
   		defaultsTo:'george'
   	},
 
   	characterclass:{
-  		type:'string',
+  		type:'STRING',
   		defaultsTo:'bard'
-  	}
+  	},
+
+    user:{
+      model:"user"
+    }
   }
 };
 
