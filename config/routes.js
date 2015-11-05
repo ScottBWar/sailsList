@@ -49,6 +49,10 @@ module.exports.routes = {
   'get /users':{
     controller:'user',
     action: 'index'
+  },
+  'post /user': {
+    controller  : 'user',
+    action    : 'create'
   }
 
   /***************************************************************************
